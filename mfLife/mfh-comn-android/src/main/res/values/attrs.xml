@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="slidingBlock" format="reference|color"/>
+        <attr name="allowWidthFull" format="boolean"/>
+        <attr name="disableViewPager" format="boolean"/>
+    </declare-styleable>
+
+    <!--圆形ImageView-->
+    <declare-styleable name="CircleImageView">
+        <!--
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />-->
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <!--圆角ImageView-->
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="Field">
+        <attr name="fieldName" format="string"/>
+        <attr name="fieldValue" format="string"/>
+        <attr name="fieldSeparate" format="boolean"/>
+        <attr name="fieldIsNew" format="boolean"/>
+        <attr name="fieldPaddingLeft" format="dimension"/>
+        <attr name="fieldPaddingRight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButton">
+        <attr name="toggleBorderWidth" format="dimension"/>
+        <attr name="offBorderColor" format="reference|color"/>
+        <attr name="offColor" format="reference|color"/>
+        <attr name="onColor" format="reference|color"/>
+        <attr name="spotColor" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontal_spacing" format="dimension" />
+        <attr name="vertical_spacing" format="dimension" />
+    </declare-styleable>
+
+</resources>

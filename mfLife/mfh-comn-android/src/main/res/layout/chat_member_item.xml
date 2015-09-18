@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@id/ms_imageFrame">
+        <com.mfh.comna.view.img.FineImgView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@id/ms_groupHeadImg" />
+        </FrameLayout>
+
+    <TextView
+        android:text="施晨阳"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="#787878"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        android:id="@id/ms_humanName"/>
+
+</LinearLayout>

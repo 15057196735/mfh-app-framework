@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp" android:paddingRight="16dp">
+
+    <com.mfh.pmb.view.chat.ChatMsgTips
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgReply
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgRespond
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgReply
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgRespond
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgReply
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgRespond
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgReply
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mfh.pmb.view.chat.ChatMsgRespond
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

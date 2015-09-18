@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="always"
+        android:title="">
+        <menu>
+
+            <item android:id="@+id/action_add_sl"
+                android:title="@string/service_button_accept"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/action_details"
+        android:icon="@drawable/ic_action_users"
+        android:showAsAction="always"
+        android:title="" />
+
+</menu>

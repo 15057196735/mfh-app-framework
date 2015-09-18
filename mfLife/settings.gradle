@@ -1,0 +1,1 @@
+include ':app', ':mfh-comn-android', ':mfh-comn-all'

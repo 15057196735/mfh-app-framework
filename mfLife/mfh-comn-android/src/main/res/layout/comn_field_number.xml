@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:clickable="true"
+    android:background="@drawable/comn_field_bg"
+    android:id="@+id/field">
+
+    <LinearLayout android:orientation="horizontal"
+        android:id="@+id/field_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="25dp"/>
+
+        <TextView
+            android:id="@+id/field_is_new_flag"
+            android:text="@string/text_new"
+            style="@style/HighlightNumberStyle"
+            android:layout_marginLeft="10dp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@android:id/text2"
+            android:text="0"
+            style="@style/FieldNumberStyle"/>
+
+        </LinearLayout>
+
+    <View
+        android:id="@+id/field_separate"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/comn_separate_bg"/>
+
+</LinearLayout>

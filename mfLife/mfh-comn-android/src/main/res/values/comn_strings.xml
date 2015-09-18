@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="_blank"></string>
+    <string name="ok">确定</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="exit">退出</string>
+    <string name="save">保存</string>
+
+    <!-- 用于规定系统退出菜单的名字 -->
+    <item name="exitAppmenu" type="id"></item>
+
+    <string name="comn_dlg_title">信息提示</string>
+    <string name="waiting">请等待&#8230;</string>
+    <string name="comma">，</string>
+
+    <string name="waiting_my">正在加载</string>
+
+    <string name="text_new">New</string>
+
+
+
+
+</resources>

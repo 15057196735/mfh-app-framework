@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberBackgroundStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">18dp</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:background">#ff0fc7e7</item>
+    </style>
+
+
+    <style name="HighlightNumberStyle" parent="NumberBackgroundStyle">
+        <item name="android:background">@drawable/comn_number_highlight</item>
+    </style>
+
+    <style name="FieldNumberStyle" parent="NumberBackgroundStyle">
+        <item name="android:background">@drawable/comn_field_number_bg</item>
+    </style>
+
+</resources>

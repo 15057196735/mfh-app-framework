@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:text="全城最低价的洗衣风暴来啦！"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@id/mat_tw_item_title" />
+        <!--
+        <ImageView
+            android:src="@drawable/char_tmp_material_tp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitXY"
+            android:id="@id/mat_tw_item_img" />
+            -->
+        <com.mfh.comna.view.img.FineImgView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@id/mat_tw_item_img" />
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/comn_separate_bg"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="55dp" android:gravity="center_vertical">
+
+    <com.mfh.comna.view.img.FineImgView
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="施"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:text="风尚小区 60-12-1203"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/change_time"
+                android:text="上午 10:23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#999999"
+                android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/type_work_list"
+                android:text="弱电"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#787878"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/statue"
+                android:text="已受理"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff00b900"
+                android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

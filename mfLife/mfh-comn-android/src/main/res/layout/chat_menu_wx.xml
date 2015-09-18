@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/separate_line"
+        style="@style/separator_horizontal" />
+
+    <LinearLayout style="@style/ChatInputPannel">
+
+        <Button
+            android:id="@+id/button_toggle"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/toggle_input_normal" />
+
+        <LinearLayout
+            android:id="@+id/rl_menu_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_menu_0"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:clickable="false"
+                android:drawableLeft="@drawable/icon_wx_menu_normal"
+                android:drawablePadding="5dp"
+                android:text="团购"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_menu_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_menu_1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:clickable="false"
+                android:drawableLeft="@drawable/icon_wx_menu_normal"
+                android:drawablePadding="5dp"
+                android:text="物业"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_menu_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_menu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:clickable="false"
+                android:drawableLeft="@drawable/icon_wx_menu_normal"
+                android:drawablePadding="5dp"
+                android:text="我"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:clickable="true"
+    android:background="@drawable/comn_field_bg"
+    android:id="@+id/field">
+
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/field_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@android:id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#787878"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        </LinearLayout>
+
+    <View
+        android:id="@+id/field_separate"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/comn_separate_bg"/>
+
+</LinearLayout>

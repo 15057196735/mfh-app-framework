@@ -1,0 +1,59 @@
+<html>
+<body>
+ 一个统一配置的样例:
+		<pre>
+&lt;?xml version="1.0" encoding="GBK" ?&gt;
+&lt;configs&gt;
+	&lt;!-- 
+	merge-rule: 合并规则
+		* order: 对default location 和 extends location 按照顺序查找, 找到第一个就返回
+		* replace: 对default location 和 extends location 按照 1 + N 合并(返回最后一个N配置)
+		* merge: 对default location 和 extends location 读取为配置列表(仅针对XML, 合并Document)
+		* default: replace
+	--&gt;
+	&lt;!-- 
+	type: 配置类型
+	* Properties files (已实现)
+    * XML documents (已实现)
+    * Property list files (.plist)
+    * JNDI
+    * JDBC Datasource
+    * System properties
+    * Applet parameters
+    * Servlet parameters 
+	 --&gt;
+	&lt;config domain="SHK.COMMON" description="公共平台配置项"
+				merge-rule="default"&gt;
+		&lt;default type="properties" location="jdbc.properties" /&gt;
+		
+		&lt;!-- CLASSPATH路径, 非Spring环境做兼容处理截掉前面的classpath:前缀 --&gt;
+		&lt;extends type="properties" location="classpath:jdbc2.properties" /&gt; 
+		&lt;extends type="properties" location="product/jdbc3.properties" /&lt;
+		
+		&lt;!-- 非Spring环境下, 查找路径依次为: 文件系统绝对路径, 文件系统相对路径, 用户Home路径, CLASSPATH路径
+		&lt;extends type="properties" location="jdbc2.properties"/&gt; --&gt;
+		
+		&gt;!-- 以下Spring WEB环境有效, 非WEB环境不可以这样配置
+		&lt;extends type="properties" location="classpath*:jdbc2.properties"/&gt;
+		 --&gt;
+		
+		&lt;!-- 绝对路径, 虽然Spring环境和非Spring环境都支持, 但是从来不建议这样配置
+		&lt;extends type="properties" location="file:///E:\Team\SOHO\CDS-Framework\trunk\code\CDS-Framework\WebRoot\WEB-INF\classes\jdbc.properties"/&gt;
+		 --&gt;
+		 
+		&lt;!-- 以下非Spring环境有效 
+		&lt;extends type="properties" location="WebRoot\WEB-INF\classes\jdbc2.properties"/&gt;
+		&lt;extends type="properties" location="E:\Team\SOHO\CDS-Framework\trunk\code\CDS-Framework\WebRoot\WEB-INF\classes\jdbc.properties"/&gt;
+		 --&gt;
+	&lt;/config&gt;
+	
+	&lt;!--  --&gt;
+	&lt;config domain="SHK.DB.UPGRADE" description="数据库升级配置"
+				merge-rule="merge"&gt;
+		&lt;default type="xml" location="upgrade/common/common_db_upgrade.xml" /&gt;
+		&lt;extends type="xml" location="upgrade/de/de_db_upgrade.xml" /&gt;
+	&lt;/config&gt;
+&lt;/configs&gt;
+</pre>
+	</body>
+</html>t;

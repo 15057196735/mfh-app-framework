@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_buttonImage"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/material_business_card"
+            android:layout_marginTop="5dp"
+            android:contentDescription="" />
+
+        <TextView
+            style="@style/HighlightNumberStyle"
+            android:id="@+id/tv_badgeNumber"
+            android:layout_toRightOf="@+id/iv_buttonImage"
+            android:layout_marginLeft="-15dp"
+            android:layout_alignParentTop="true"
+            android:text="99+"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_buttonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF000000"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_badge"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

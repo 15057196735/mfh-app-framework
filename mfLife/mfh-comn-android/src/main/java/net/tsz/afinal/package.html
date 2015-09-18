@@ -1,0 +1,20 @@
+<html>
+<body>
+开源android框架，里面用到两个实用点：
+dao OR-Mapping框架
+网络异步访问框架
+
+修改点：
+1、在所有查询方法中添加了pageInfo字段
+2、建表语句把id自动自增去掉
+3、建表语句增加了类型支持
+4、添加了findCount函数
+5、修改了HttpHandler(和我们工程中的MyAsyncTask是一回事)，将其继承的AsyncTask改成android自带的，因为作者直接把andorid的拷贝过来修改，但没看到什么不同的。
+AjaxCallback和IAsyncTask是一回事。
+6、修改了SyncRequestHandler，让他和异步HttpHandler一样，支持断点下载
+7、dao部分因为不支持继承类的映射，并且对static和transient也不支持，故通过阿里的fastjson来获取属性，参见ClassUtils.getAllNormalFields()方法。
+相应的所有获取属性的地方都通过该方法进行，注释掉了一些无用代码。
+8、FieldUtils中拿出captialFirst公共方法。
+9、把net.tsz.afinal.annotation.sqlite.annotation包下的几个注解移到了两端公用类库中：com.mfh.comn.annotations
+</body>
+</html>

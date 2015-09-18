@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@drawable/material_item_tw_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@id/mat_tw_topItemView">
+        <!--
+        <ImageView
+            android:id="@+id/material_top_image_view"
+            android:src="@drawable/char_tmp_material_tp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"/>
+        -->
+        <com.mfh.comna.view.img.FineImgView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/material_top_image_view" />
+
+        <TextView
+            android:text="欢迎您关注！雅戈尔洗衣季，物业为您提供全城最低价的优质洗衣服务！"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#a0000000"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_alignBottom="@+id/material_top_image_view"
+            android:id="@id/mat_tw_topItemText" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/comn_separate_bg"/>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/mat_tw_normalItemList">
+
+        <com.mfh.comna.bizz.material.view.MaterialTwSubItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.mfh.comna.bizz.material.view.MaterialTwSubItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+</LinearLayout>

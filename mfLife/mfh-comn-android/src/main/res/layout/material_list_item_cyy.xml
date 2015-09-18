@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#e0e0e0" android:paddingTop="8dp" android:paddingBottom="2dp">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:text="亲爱的业主您好，您需要发送给我们您的小区、姓名、楼幢号及手机号码，我们审核后将会帮您进行实名绑定，也方便今后更好的为您服务！"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:id="@id/mat_paramText" />
+
+        <com.mfh.comna.bizz.material.view.MaterialItemBtnBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/mat_btnBar" />
+
+        </LinearLayout>
+
+</FrameLayout>

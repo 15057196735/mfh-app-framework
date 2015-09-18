@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#f3f3f3">
+
+    <ImageView
+        android:src="@drawable/chat_tmp_user_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:id="@id/ms_headImgView"
+        android:background="@color/black"
+        android:contentDescription="" />
+
+</LinearLayout>

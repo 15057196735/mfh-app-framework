@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mfh_name">满分家园</string>
+    <string name="app_title">物业管理系统</string>
+    <string name="app_title2">满分经纪人</string>
+    <string name="app_user">雅戈尔物业</string>
+    <string name="action_settings">设置</string>
+    <string name="action_modify">修改</string>
+    <string name="action_delete">删除</string>
+    <string name="action_add_member">添加人员</string>
+    <string name="action_server">服务受理</string>
+    <string name="action_chat">对话业主</string>
+    <string name="action_account">我的账户</string>
+    <string name="action_service_ts">投诉</string>
+    <string name="action_service_wx">维修</string>
+    <string name="action_service_xy">衣物洗护</string>
+    <string name="action_house_search">查询房源</string>
+    <string name="action_house_add">添加房源</string>
+    <string name="action_service_bs">报事</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_default">物业管理系统</string>
+    <string name="title_activity_default2">满分经纪人</string>
+    <string name="title_activity_dialog">对话信息</string>
+    <string name="title_activity_house_show">房源展示</string>
+    <string name="title_activity_member_select">选择通讯录</string>
+    <string name="title_activity_member_add">添加成员</string>
+    <string name="title_activity_member_delete">删除成员</string>
+    <string name="title_activity_service_add">增值服务</string>
+    <string name="title_activity_material_cyy">选择常用语</string>
+    <string name="title_activity_material_tp">选择图片</string>
+    <string name="title_activity_material_tw">选择图文</string>
+    <string name="title_activity_member_edit">编辑业主</string>
+    <string name="title_activity_member_detail">详细信息</string>
+    <string name="title_activity_member_list">选择业主</string>
+    <string name="title_activity_service_detail">报事信息</string>
+    <string name="hello_world">满分家园•送到家的品质生活</string>
+
+    <!-- =================================================================== -->
+    <string name="login_title">请登录</string>
+    <string name="login_field_lbl1">请输入用户名</string>
+    <string name="login_field_lbl2">请输入密码</string>
+    <string name="login_button_name">登录</string>
+    <string name="login_button_help">忘记密码？</string>
+
+    <!-- ================================================================== -->
+    <string name="main_tab_name1">对话</string>
+    <string name="main_tab_name2">服务</string>
+    <string name="main_tab_name3">通讯录</string>
+    <string name="main_tab_name4">房源</string>
+
+    <!-- ================================================================== -->
+    <string name="chat_button_send">发送</string>
+    <string name="chat_button_remove">解散对话人员</string>
+    <string name="chat_material_lbl1">常用语</string>
+    <string name="chat_material_lbl2">图片</string>
+    <string name="chat_material_lbl3">图文</string>
+    <string name="chat_material_lbl4">名片</string>
+
+    <!-- ================================================================== -->
+    <string name="service_type_name1">报修投诉</string>
+    <string name="service_type_name2">维修</string>
+    <string name="service_type_name3">衣物洗护</string>
+    <string name="service_type_name4">生蔬配送</string>
+    <string name="service_type_name5">工单</string>
+    <string name="service_type_name6">咨询建议</string>
+    <string name="service_button_del">删除</string>
+    <string name="service_button_msg">回复(发消息)</string>
+    <string name="service_button_accept">生成工单</string>
+    <string name="service_button_finish">完成</string>
+    <string name="service_field_tel">电话</string>
+    <string name="service_field_name1">类别</string>
+    <string name="service_field_name2">内容</string>
+    <string name="service_field_name3">状态</string>
+    <string name="service_field_name4">创建人</string>
+    <string name="service_field_name5">创建时间</string>
+    <string name="service_field_name6">受理人</string>
+    <string name="service_field_name7">受理时间</string>
+    <string name="service_field_name8">完结时间</string>
+    <string name="service_field_name9">业主评价</string>
+    <string name="service_field_name10">类型</string>
+    <string name="service_field_name11">来源</string>
+    <string name="service_field_name12">预约时间</string>
+    <string name="service_field_name13">报事区域</string>
+
+
+    <!-- ================================================================== -->
+    <string name="member_field_name1">姓名</string>
+    <string name="member_field_name2">类型</string>
+    <string name="member_field_name3">小区</string>
+    <string name="member_field_name4">楼栋号</string>
+    <string name="member_field_name5">手机</string>
+    <string name="member_field_name6">投诉</string>
+    <string name="member_field_name7">维修</string>
+    <string name="member_field_name8">订单</string>
+    <string name="member_field_guid">全局通讯号</string>
+    <string name="title_activity_member_check">MemberCheckActivity</string>
+
+
+    <!-- ================================================================== -->
+    <string name="house_type_name1">出售</string>
+    <string name="house_type_name2">出租</string>
+    <string name="house_type_name3">新盘</string>
+    <string name="house_type_name4">写字楼</string>
+    <string name="house_type_name5">商铺</string>
+    <string name="house_type_name6">推荐</string>
+    <string name="house_type_name7">周边</string>
+    <string name="house_type_name8">收藏</string>
+
+
+    <!-- ================================================================== -->
+    <string name="scan_text">将二维码/条码放入框内, 即可自动扫描</string>
+
+
+    <!-- ======================网络电话============================================ -->
+    <string name="netphone_recieve">接听</string>
+    <string name="netphone_refuse">拒接</string>
+    <string name="netphone_release">挂断</string>
+    <string name="netphone_name">满分家园网络通话</string>
+    <string name="netphone_on_calling">正在通话</string>
+
+    <string name="extra_name">url</string>
+    <string name="member_bus">2-商家</string>
+    <string name="member_manfen">1-满分</string>
+    <string name="member_owner">3-业主</string>
+    <string name="member_tene">0-物业</string>
+
+    <string name="search_bar_hint">搜索</string>
+    <string name="search_bar_hint_conversation">搜索</string>
+
+    <string name="topbar_title_chat">对话</string>
+    <string name="topbar_title_mfh">小伙伴</string>
+    <string name="topbar_title_converdaction">对话</string>
+    <string name="topbar_title_surround">附近</string>
+    <string name="topbar_title_store">商家</string>
+    <string name="topbar_title_store_detail">店铺详情</string>
+    <string name="topbar_title_qrcode">扫一扫</string>
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+    <string name="toast_network_error">没有可用的网络，请检查网络连接</string>
+
+
+    <string name="button_start_chat">开始对话</string>
+
+
+    <string name="label_message_store">商家</string>
+    <string name="label_message_surround">附近</string>
+    <string name="label_store_name">商家名称</string>
+    <string name="label_service_telephone">客服电话</string>
+    <string name="label_service_description">服务项目</string>
+    <string name="label_address">地理位置</string>
+    <string name="label_shop_online">网上店铺</string>
+    <string name="label_material_picture">图片</string>
+    <string name="label_material_shoot">拍照</string>
+    <string name="label_material_position">位置</string>
+    <string name="label_material_namecard">名片</string>
+    <string name="label_platform_weichat">微信</string>
+    <string name="label_platform_weichat_circle">朋友圈</string>
+
+    <string name="dialog_title_scanning_result">扫描结果</string>
+    <string name="dialog_title_app_update">检测到新版本v%s</string>
+    <string name="dialog_title_share_to">分享到</string>
+    <string name="dialog_message_app_update">为了提供更好的服务，满分家园每天都在努力！请更新后马上体验吧~</string>
+    <string name="dialog_message_clean_cache">您确定要清除缓存吗？</string>
+    <string name="dialog_message_link_option">可能存在风险，是否打开链接?<br/>%s</string>
+    <string name="dialog_message_logout">您确定要退出吗？</string>
+    <string name="dialog_message_clean_shake_history">您确定要清空历史列表吗?</string>
+    <string name="dialog_button_ok">确定</string>
+    <string name="dialog_button_open">打开</string>
+    <string name="dialog_button_clean">清空</string>
+    <string name="dialog_button_copy">复制</string>
+    <string name="dialog_button_appupdate">立即更新</string>
+    <string name="dialog_button_cancel">取消</string>
+    <string name="dialog_button_yes">是</string>
+    <string name="dialog_button_no">否</string>
+    <string name="dialog_update_headimage">修改头像</string>
+    <string name="dialog_item_photo">相册</string>
+    <string name="dialog_item_camera">拍照</string>
+
+    <string name="toast_copy_success">复制成功</string>
+
+
+</resources>

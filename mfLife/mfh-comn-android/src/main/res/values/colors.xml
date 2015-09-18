@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--二维码扫描界面颜色配置-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="whitesmoke">#F5F5F5</color><!--烟白色 -->
+    <color name="azure">#F0FFFF</color><!--天蓝色 -->
+    <color name="lightskyblue">#87CEFA</color><!--亮天蓝色 -->
+    <color name="darkblue">#00008B</color><!--暗蓝色 -->
+    <color name="blue">#0000FF</color><!--蓝色 -->
+    <color name="mediumslateblue">#7B68EE</color><!--中暗蓝色-->
+    <color name="lime">#00FF00</color><!--酸橙色 -->
+    <color name="limegreen">#32CD32</color><!--橙绿色 -->
+    <color name="orangered">#FF4500</color><!--红橙色 -->
+    <color name="orange">#FFA500</color><!--橙色 -->
+    <color name="bisque">#FFE4C4</color><!--桔黄色 -->
+    <color name="black">#FF000000</color><!--黑色 -->
+    <color name="gainsboro">#DCDCDC</color><!--淡灰色 -->
+    <color name="lightgray">#D3D3D3</color><!--亮灰色 -->
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+
+
+    <color name="transparent">#00000000</color>
+
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+
+    <color name="list_divider_color">#DADADA</color>
+
+    <color name="topListItemView">#f5fff0</color><!--置顶背景色-->
+    <item type="drawable" name="transparent">#00000000</item>
+
+    <color name="dialog_wait">#95ffffff</color>
+
+    <color name="green_select">#ff329b4e</color>
+    <color name="green_normal">#ff0bb908</color>
+
+    <color name="window_background_gray">#ffeeeeee</color>
+    <!--20%黑色-->
+    <color name="divider_gray">#33000000</color>
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+
+    <color name="bg_touch">@color/lightest_gray</color>
+
+    <!--mfh-->
+    <color name="window_background_primary">#E8E8E7</color>
+    <color name="mfh_text_gray">#ff999999</color>
+
+
+    <color name="black_10">#1a000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4d000000</color>
+    <color name="black_35">#59000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_65">#a6000000</color>
+    <color name="black_70">#b3000000</color>
+    <color name="black_80">#cc000000</color>
+    <color name="black_90">#e6000000</color>
+
+
+    <color name="white_20">#33ffffff</color>
+    <color name="white_30">#4dffffff</color>
+    <color name="white_35">#59ffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_70">#b3ffffff</color>
+    <color name="white_80">#ccffffff</color>
+
+
+</resources>

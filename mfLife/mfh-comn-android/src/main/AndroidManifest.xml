@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mfh.comna">
+
+    <!--地图定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!--表示会使用到硬件的NFC功能。并且当用户在Google Play Store中搜索时，
+        只有带有NFC功能的手机才能够搜索到本应用。-->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true">
+
+
+        <!-- sd卡图片展示 -->
+        <activity android:name=".utils.sdimage.ListImageActivity"/>
+        <activity android:name=".utils.sdimage.EditImageActivity"/>
+        <activity android:name=".utils.sdimage.ZoomImageActivity"/>
+
+        <!-- ========================NFC=============================== -->
+        <!--监听NFC事件的Activity-->
+        <activity android:name="com.mfh.comna.utils.nfc.NfcActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+
+        <!--接收监听Activity发送的广播的工具类-->
+        <service android:name="com.mfh.comna.utils.nfc.NfcUtil" />
+
+        <!-- 网络电话 -->
+        <service
+            android:name="com.hisun.phone.core.voice.CCPService"
+            android:exported="false" />
+        <!-- 网络通话界面 -->
+        <activity android:name=".bizz.netphone.view.CallInActivity"
+            android:launchMode="singleInstance"/>
+
+
+        <!-- ========================二维码扫描=============================== -->
+        <activity
+            android:name="com.mfh.comna.utils.qrcode.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+
+        <service android:name=".androidService.ComnaAndroidService"/>
+    </application>
+
+</manifest>

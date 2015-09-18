@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="gd_action_bar" />
+    <item type="id" name="gd_action_bar_host" />
+    <item type="id" name="gd_action_bar_content_view" />
+    <item type="id" name="action_bar_refresh" />
+    <item type="id" name="action_bar_search" />
+    <item type="id" name="action_bar_view" />
+
+</resources>

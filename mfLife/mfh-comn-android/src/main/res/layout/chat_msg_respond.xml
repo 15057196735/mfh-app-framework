@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp" android:paddingBottom="10dp"
+    android:background="#eeeeee">
+
+    <!--提醒时间-->
+    <TextView
+        android:text=""
+        style="@style/ChatMsgTipsStyle"
+        android:gravity="center"
+        android:id="@+id/ms_other_chat_time"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mfh.comna.view.img.FineImgView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/ms_otherHeadImg" />
+
+        <LinearLayout
+            style="@style/ChatMsgRespondBodyStyle">
+
+            <TextView
+                android:text=""
+                style="@style/ChatMsgUserName"
+                android:id="@+id/ms_otherSayTime"
+                android:visibility="gone" />
+
+            <FrameLayout
+                style="@style/ChatMsgRespondContainerStyle"
+                android:id="@+id/ms_msgOuterFrame">
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:minHeight="30dp"
+                    android:gravity="left|center"
+                    android:id="@+id/ms_otherSayMsg" />
+                 </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

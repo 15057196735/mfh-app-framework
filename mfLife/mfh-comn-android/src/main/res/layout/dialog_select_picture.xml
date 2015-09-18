@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_update_headimage"
+        android:padding="10dp" />
+
+    <View
+        android:id="@+id/top_line"
+        style="@style/separator_horizontal"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_option_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_item_photo"
+        android:layout_below="@id/tv_title"
+        android:padding="10dp" />
+
+    <View
+        android:id="@+id/second_line"
+        style="@style/separator_horizontal"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_option_1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/tv_option_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_item_camera"
+        android:layout_below="@+id/second_line"
+        android:padding="10dp" />
+
+</RelativeLayout>

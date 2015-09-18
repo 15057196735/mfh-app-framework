@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ActionBar related attributes -->
+    <attr name="gdActionBarTitleColor" format="color" />
+    <attr name="gdActionBarBackground" format="reference" />
+    <attr name="gdActionBarItemBackground" format="reference" />
+    <attr name="gdActionBarDividerDrawable" format="reference" />
+    <attr name="gdActionBarDividerWidth" format="dimension" />
+    <attr name="gdActionBarApplicationDrawable" format="reference" />
+    <attr name="gdActionBarHomeDrawable" format="reference" />
+    <attr name="gdActionBarItemColorNormal" format="reference|color" />
+    <attr name="gdActionBarItemColorAlt" format="reference|color" />
+    <attr name="gdActionBarMaxItems" format="integer" />
+
+    <attr name="gdActionBarStyle" format="reference" />
+    <attr name="gdActionBarTitleStyle" format="reference" />
+    <attr name="gdActionBarDividerStyle" format="reference" />
+    <attr name="gdActionBarItemStyle" format="reference" />
+
+    <attr name="gdTabIndicatorHeight" format="dimension" />
+    <attr name="gdTabIndicatorTextAppearance" format="reference" />
+    <attr name="gdTabIndicatorBackground" format="reference" />
+
+    <attr name="gdTabIndicatorStyle" format="reference" />
+
+
+    <!--			-->
+    <!-- Styleables -->
+    <!--			-->
+
+    <!-- ActionBar related attributes -->
+    <declare-styleable name="ActionBar">
+        <attr name="actionBarTitle" format="string" />
+        <attr name="type">
+            <enum name="normal" value="0" />
+            <!--
+            <enum name="dashboard" value="1" />
+            <enum name="empty" value="2" />
+            -->
+        </attr>
+        <attr name="dividerDrawable" format="reference"/>
+        <attr name="dividerWidth" format="integer"/>
+        <attr name="homeDrawable" format="reference" />
+        <attr name="maxItems" format="integer" />
+    </declare-styleable>
+
+</resources>

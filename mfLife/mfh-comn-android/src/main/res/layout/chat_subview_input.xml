@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+
+    <View
+        android:id="@+id/separate_line"
+        style="@style/separator_horizontal"/>
+
+    <LinearLayout style="@style/ChatInputPannel">
+        <Button
+            android:id="@+id/button_toggle"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:background="@drawable/toggle_menu_normal"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/button_voice"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/chat_voice_normal"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/chat_input"
+                android:text="@string/_blank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:maxLines="4"
+                android:background="@drawable/widget_chat_message_editbox_background"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/chat_face"
+                android:background="@drawable/chat_input_face_btn"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Button
+                android:id="@id/button_add"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/chat_more_btn"
+                android:padding="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Button
+                android:id="@id/button_send"
+                android:text="@string/chat_button_send"
+                android:layout_width="45dp"
+                android:layout_height="32dp"
+                android:background="@drawable/comn_button_bg"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

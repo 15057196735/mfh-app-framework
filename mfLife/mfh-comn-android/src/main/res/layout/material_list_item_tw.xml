@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#e0e0e0" android:paddingTop="8dp" android:paddingBottom="2dp">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <com.mfh.comna.bizz.material.view.MaterialTwItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/mat_tuwenView" />
+
+        <com.mfh.comna.bizz.material.view.MaterialItemBtnBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/mat_btnBar" />
+
+        </LinearLayout>
+
+</FrameLayout>

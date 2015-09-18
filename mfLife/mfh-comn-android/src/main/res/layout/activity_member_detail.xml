@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@drawable/member_detail_head_bg"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp">
+
+                <com.mfh.comna.view.img.RoundImgView
+                    android:src="@drawable/chat_tmp_user_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@id/member_round_head" />
+
+                <TextView
+                    android:text="施晨阳"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:id="@id/member_detail_name" />
+
+                <TextView
+                    android:text="风尚小区 30-12-301"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#eeeeee"
+                    android:id="@id/member_detail_addr" />
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+                    <com.mfh.comna.view.widget.SimpleVerticalField
+                        android:id="@+id/member_tel_btn"
+                        app:fieldName="@string/member_field_name5"
+                        app:fieldValue="138 1234 5678"
+                        app:fieldSeparate="false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="30dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/comn_separate_bg"/>
+
+                   <!-- <com.mfh.comna.view.widget.SimpleVerticalField
+                        android:id="@id/member_guid"
+                        app:fieldName="@string/member_field_guid"
+                        app:fieldValue=""
+                        app:fieldSeparate="false"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"/>-->
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="30dp"
+                        android:background="@drawable/comn_separate_bg"/>
+                    <FrameLayout
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/member_sms_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:height="35dp"
+                            android:background="@null"
+                            android:drawableTop="@drawable/ic_button_email"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/comn_separate_bg"/>
+
+                <com.mfh.comna.view.widget.SimpleVerticalField
+                    app:fieldName="@string/member_field_name2"
+                    app:fieldValue="业主"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@id/member_human_type" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/comn_separate_bg"
+                    android:layout_marginTop="30dp"/>
+
+                <LinearLayout android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="50dp"
+                    android:id="@+id/work_order_support">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/ChatContainerStyle"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/topbar_custom"
+        android:id="@+id/top_bar"/>
+
+    <LinearLayout
+        android:id="@+id/messagesView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

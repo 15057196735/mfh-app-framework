@@ -1,0 +1,14 @@
+<html>
+<body>
+数据包结构如下，分成三段<br>
+<ul>
+	<li>返回码</li>
+	<li>返回码描述</li>
+	<li>数据块（具体携带的数据，又分为多种类型）</li>
+</ul>
+Json格式为：<br>
+{code:1,  msg: 成功, data: …..}<br>
+对应的android端java对象为：com.mfh.comn.net. ResponseBody，其中data类型为下面所述的IResponseData类型。
+
+</body>
+</html>

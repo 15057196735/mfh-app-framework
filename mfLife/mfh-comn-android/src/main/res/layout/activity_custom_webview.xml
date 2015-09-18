@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_custom"
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.mfh.comna.api.web.HybridWebView
+            android:id="@+id/webview_custom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+
+        <ProgressBar
+            android:id="@+id/animProgress"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            style="@style/loading"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <com.mfh.comna.api.ui.view.EmptyLayout
+            android:id="@+id/error_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

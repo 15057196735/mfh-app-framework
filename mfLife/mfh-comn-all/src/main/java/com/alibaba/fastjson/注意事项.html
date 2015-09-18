@@ -1,0 +1,10 @@
+<html>
+<body>
+注意：采用的是1.1.38版本
+对其进行了一点修改，即解析/反序列化时能够设置dataFormat（序列化时本身可以指定）
+修改之处：
+1、DefaultJSONParser中添加了dateFormatPatternThread线程变量
+2、搜索全工程使用dateFormatPatternThread的地方，大概有三处。
+3、DeserializeBeanInfo类中把某段代码变成通用方法，便于外部也使用。参见computeSettersInner。
+</body>
+</html>

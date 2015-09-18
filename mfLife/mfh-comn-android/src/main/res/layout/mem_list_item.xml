@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="55dp" android:gravity="center_vertical">
+
+    <com.mfh.comna.view.img.FineImgView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@id/member_headImage" />
+
+    <TextView
+        android:id="@android:id/text1"
+        android:text="@string/_blank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minWidth="65dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@android:id/text2"
+        android:text="@string/_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

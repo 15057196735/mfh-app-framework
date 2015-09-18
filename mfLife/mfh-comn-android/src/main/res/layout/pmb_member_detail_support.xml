@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mfh.comna.view.widget.NumberField
+            android:id="@+id/member_field_ts"
+            app:fieldName="@string/service_type_name1"
+            app:fieldValue="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.mfh.comna.view.widget.NumberField
+            app:fieldName="@string/service_type_name6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/member_field_jy" />
+
+        <com.mfh.comna.view.widget.NumberField
+            app:fieldName="@string/member_field_name8"
+            app:fieldValue="0"
+            app:fieldIsNew="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/member_field_order" />
+    </LinearLayout>
+  </FrameLayout>
